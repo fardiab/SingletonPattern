@@ -3,7 +3,7 @@ from abc import ABCMeta, abstractstaticmethod
 class IPerson(metaclass=ABCMeta):
     @abstractstaticmethod
     def print_data(self):
-        "write something btch"
+        "write something"
 
 class PersonSingleton(IPerson):
 
@@ -26,8 +26,8 @@ class PersonSingleton(IPerson):
     def print_data(self):
         return f"Name : {self.name} age : {self.age}"
 
-a = PersonSingleton("Fardi", 19)
+a = PersonSingleton('Radud', 10)
 print(a.print_data())
 
-b = PersonSingleton("Krasvar", 22)
-print(b.print_data())
+# b = PersonSingleton("Davud", 2)
+# print(b.print_data())
