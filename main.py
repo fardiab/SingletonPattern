@@ -28,6 +28,3 @@ class PersonSingleton(IPerson):
 
 a = PersonSingleton('Radud', 10)
 print(a.print_data())
-
-# b = PersonSingleton("Davud", 2)
-# print(b.print_data())
