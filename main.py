@@ -31,4 +31,5 @@ class PersonSingleton(IPerson):
 
 obj = PersonSingleton('Radud', 10)
 obj2 = PersonSingleton('Jva', 10)
+obj3 = PersonSingleton('Daga', 25)
 print(obj.print_data())
