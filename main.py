@@ -26,5 +26,5 @@ class PersonSingleton(IPerson):
     def print_data(self):
         return f"Name : {self.name} age : {self.age}"
 
-a = PersonSingleton('Radud', 10)
-print(a.print_data())
+obj = PersonSingleton('Radud', 10)
+print(obj.print_data())
