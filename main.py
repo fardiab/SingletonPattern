@@ -1,9 +1,12 @@
 from abc import ABCMeta, abstractstaticmethod
 
+
 class IPerson(metaclass=ABCMeta):
+    
     @abstractstaticmethod
     def print_data(self):
         "write something"
+
 
 class PersonSingleton(IPerson):
 
