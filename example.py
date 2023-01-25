@@ -1,9 +1,9 @@
 class hero:
-    # __instance = None
-    # def __new__(cls, *args, **kwargs):
-    #     if not cls.__instance:
-    #         cls.__instance = super(hero, cls).__new__(cls, *args, **kwargs)
-    #     return cls.__instance
+    __instance = None
+    def __new__(cls, *args, **kwargs):
+        if not cls.__instance:
+            cls.__instance = super(hero, cls).__new__(cls, *args, **kwargs)
+        return cls.__instance
 
     def __init__(self, name, hp, mp):
         self.name = name
